@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   #get  'static_pages/contact' #演習
   get  '/contact',    to: 'static_pages#contact' #5章で変更
   get  '/signup',  to: 'users#new'
+  resources :users
 end
