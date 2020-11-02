@@ -12,7 +12,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     follow_redirect!
     assert_template 'users/show'
+    assert is_logged_in?
     assert_not flash.empty? 
-    # 演習7.4.4.1 FILL_INを埋める問題
+      # 演習7.4.4.1 FILL_INを埋める問題
   end
 end
