@@ -14,15 +14,15 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
   
-  test "should get home" do
-    get home_path #5章
+  #test "should get home" do
+    #get home_path #5章
     #get static_pages_home_url
-    assert_response :success
+    #assert_response :success
     #assert_select "title", "Home | Ruby on Rails Tutorial Sample App"
     #あらなんと簡単に！
     #assert_select "title", "Ruby on Rails Tutorial Sample App"
-    assert_select "title", "Home | #{@base_title}"
-  end
+    #assert_select "title", "Home | #{@base_title}"
+  #end
 
   test "should get help" do
     get help_path #5章

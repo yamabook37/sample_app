@@ -15,6 +15,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # 保存の成功をここで扱う。
+      log_in @user
+        #ユーザがログイン中かを確認する
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
