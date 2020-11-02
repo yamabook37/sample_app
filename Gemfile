@@ -39,7 +39,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #5章
 source 'https://rubygems.org'
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 
 #6章
 gem 'bcrypt',         '3.1.12'
