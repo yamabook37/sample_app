@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   end
 
   private
-
+    # private内は一つ深くする
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                   :password_confirmation)
